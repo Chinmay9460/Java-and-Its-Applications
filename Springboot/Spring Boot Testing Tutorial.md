@@ -14,3 +14,16 @@
   Mockito, Assertjm JsonPathm JsonAssert to out application as test dependencies.
 
 # Types of Tests -->
+-  ## Unit Tests
+    : These are the tests to verify the behaviour of a single unit, and ideally they shouldn't
+     depend on frameworks like Spring or Hibernate, etc.
+
+-  ## Slice Tests -->
+    : These are tests to verify a slice of a application such as Web layer or Persistence layer etc.
+     Spring Boot provides support for testing slices of the application using @WebMvcTest, @DataJpaTest,
+     @DataMongoTest etc.
+
+- ## Integration Testng -->
+    : These are the tests, which tests the application in a blackbox manner. We pass in some input,
+     and we expect specific output, we don’t know or care how it works internally. Spring Boot
+     provides support for writing Integration Tests using @SpringBootTest.
