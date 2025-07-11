@@ -1,0 +1,16 @@
+# Testing SpringBoot Applicaitons -->
+
+- We will learn how to write unit, slice and integration tests for my Spring Boot Application.
+  We should write Unit Tests to verify the business logic of a perticular unit(a class, a method, or
+  a set of classes), and they shouldn't be talking to any external services like database, queue or
+  other web services etc. If the unit we are testing depends on any of those external serices, then
+  we can provide mock implementations of those dependencies and verify the unit's behaviour.
+
+- In addition to Unit Tests, we should write integration tests which exercise the behaviour of a 
+  sub-system or a component by talking to the real services and dependent collaborators.
+
+- When we generate our spring boot application spring-boot-starter-test dependency is automatically
+  added which transitively adds the most commonly used testing libraries such as SPringTest, JUnit5,
+  Mockito, Assertjm JsonPathm JsonAssert to out application as test dependencies.
+
+# Types of Tests -->
